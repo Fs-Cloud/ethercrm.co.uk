@@ -7,13 +7,6 @@ var express = require('express')
 //   Strategies in Passport require a `verify` function, which accept
 //   credentials (in this case, a username and password), and invoke a callback
 //   with a user object.
-passport.use(new BasicStrategy({},
-  function(username, password, done) {
-    var success = (username === 'B01' && password === 'B01');
-    done(null, success);
-  }
-));
-
 var app = express();
 
 app.use(passport.initialize());
