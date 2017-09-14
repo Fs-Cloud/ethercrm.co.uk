@@ -9,7 +9,7 @@ var express = require('express')
 //   with a user object.
 passport.use(new BasicStrategy({},
   function(username, password, done) {
-    var success = (username === 'USERNAME' && password === 'PASSWORD');
+    var success = (username === 'B01' && password === 'B01');
     done(null, success);
   }
 ));
