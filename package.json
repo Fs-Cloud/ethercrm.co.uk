@@ -1,15 +1,15 @@
 {
   "dependencies": {
-    "express": "4.15.4",
-    "passport": "^0.2.0",
-    "passport-http": "^0.2.2"
+    "express": "^4.4.1",
+    "passport-http": "^0.2.2",
+    "passport": "^0.2.0"
   },
   "devDependencies": {},
   "engines": {
-    "node": "0.10.x"
+    "node": "0.6.14"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/eetadafe86/B01-Under-construction.git"
   }
 }

@@ -14,7 +14,7 @@ app.use(passport.initialize());
 app.use(passport.authenticate('basic', {
   session: false
 }));
-app.use(express.static(__dirname + '/public'));;
+app.use(express.static(__dirname + '/public'));
 
 
 var port = Number(process.env.PORT || 5000);
