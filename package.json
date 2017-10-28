@@ -1,5 +1,5 @@
 {
-  "name": "EtherCRM",
+  "name": "Ether-CRM",
   "version": "0.2.0",
   "description": "EtherCRM CRM for wealth managers and financial advisers",
   "main": "index.html",
@@ -26,5 +26,8 @@
   "contributors": [
     "Edwin Luther <edwin@ethercrm.com> (http://binary01.co.uk)"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "passport-http": "^0.3.0"
+  }
 }
