@@ -4,8 +4,7 @@
     "passport-http": "^0.2.2",
     "passport": "^0.2.0"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "engines": {
     "node": "0.10.x"
   },
