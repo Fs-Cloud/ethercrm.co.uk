@@ -1,15 +1,30 @@
 {
+  "name": "EtherCRM",
+  "version": "0.2.0",
+  "description": "EtherCRM CRM for wealth managers and financial advisers",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
-    "express": "^4.4.1",
-    "passport-http": "^0.2.2",
+    "express": "^4.13.3",
     "passport": "^0.2.0"
   },
-  "devDependencies": {},
   "engines": {
-    "node": "0.10.x"
+    "node": "4.0.0"
   },
   "repository": {
     "type": "git",
-    "url": ""
-  }
+    "url": "https://github.com/eetadafe86/ether-crm.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "Edwin Luther",
+  "contributors": [
+    "Edwin Luther <edwin@ethercrm.com> (http://binary01.co.uk)"
+  ],
+  "license": "MIT"
 }
