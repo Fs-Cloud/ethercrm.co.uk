@@ -11,10 +11,21 @@
     "passport-http": "^0.2.2",
     "passport": "^0.2.0"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/eetadafe86/ether-crm.git"
-  }
+  },
+  "keywords": [
+    "node",
+    "CRM",
+    "heroku",
+    "express"
+  ],
+  "author": "Edwin Luther",
+  "contributors": [
+    "Edwin Luther <edwin@ethercrm.co.uk> (http://binary01.co.uk)",
+    "Jono Forbes <jono@ethercrm.co.uk> (http://binary01.co.uk)"    
+  ],
+  "license": "MIT"
 }

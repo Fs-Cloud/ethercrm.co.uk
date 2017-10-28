@@ -1987,4 +1987,12 @@ a:focus, a:hover {
   width: 100%;
 }
 
+div.hero-nature{
+  text-align:center;
+  background: url(images\background\comming-soon.png);
+  background-size:cover;
+  background-position:center;
+  padding-top:100px;
+  padding-bottom:100px;
+}
 /*# sourceMappingURL=maps/style.css.map */
