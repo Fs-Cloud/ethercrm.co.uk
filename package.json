@@ -5,11 +5,11 @@
   "engines": {
     "node": "6.11.1"
   },
-
   "dependencies": {
     "express": "^4.4.1",
-    "passport-http": "^0.2.2",
-    "passport": "^0.2.0"
+    "get-ssl-certificate": "^2.0.1",
+    "passport": "^0.2.0",
+    "passport-http": "^0.2.2"
   },
   "devDependencies": {},
   "repository": {
@@ -25,7 +25,7 @@
   "author": "Edwin Luther",
   "contributors": [
     "Edwin Luther <edwin@ethercrm.co.uk> (http://binary01.co.uk)",
-    "Jono Forbes <jono@ethercrm.co.uk> (http://binary01.co.uk)"    
+    "Jono Forbes <jono@ethercrm.co.uk> (http://binary01.co.uk)"
   ],
   "license": "MIT"
 }
