@@ -2038,4 +2038,14 @@ fieldset[disabled] .btn-custom.active {
   padding-top:20px;
   padding-bottom:20px;
 }
+.fix-gutters > [class*="col-"],
+.fix-gutters-six > [class*="col-md-6"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.no-gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+
 /*# sourceMappingURL=maps/style.css.map */
