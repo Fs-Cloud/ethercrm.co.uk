@@ -1987,12 +1987,21 @@ a:focus, a:hover {
   width: 100%;
 }
 
-div.hero-nature{
-  text-align:center;
-  background: url(images\background\comming-soon.png);
-  background-size:cover;
-  background-position:center;
-  padding-top:100px;
-  padding-bottom:100px;
+div.hero-nature {
+  text-align: center;
+  background: url(D:\OneDrive - Binary 01 Limited\Binary 01\EtherWebsite\ether.co.uk\public\images\background\comming-soon.png);
+  background-size: cover;
+  background-position: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+body.hero-nature {
+  text-align: center;
+  background: url(D:\OneDrive - Binary 01 Limited\Binary 01\EtherWebsite\ether.co.uk\public\images\background\comming-soon.png);
+  background-size: cover;
+  background-position: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 /*# sourceMappingURL=maps/style.css.map */
