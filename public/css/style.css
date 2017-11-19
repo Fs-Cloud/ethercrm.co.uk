@@ -1966,7 +1966,7 @@ text-align: center;
 }
 div.hero-nature {
   text-align: center;
-  background: url(D:\OneDrive - Binary 01 Limited\Binary 01\EtherWebsite\ether.co.uk\public\images\background\comming-soon.png);
+  background: url(image(promo)
   background-size: cover;
   background-position: center;
   padding-top: 0px;
@@ -1974,7 +1974,7 @@ div.hero-nature {
 }
 body.hero-nature {
   text-align: center;
-  background: url(D:\OneDrive - Binary 01 Limited\Binary 01\EtherWebsite\ether.co.uk\public\images\background\comming-soon.png);
+  background: url('..images\background\promo-video-back.png');
   background-size: cover;
   background-position: center;
   padding-top: 0px;
