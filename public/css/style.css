@@ -1966,7 +1966,7 @@ text-align: center;
 }
 div.hero-nature {
   text-align: center;
-  background: url(image(promo)
+  background: url ('..images\background\promo-video-back.png');
   background-size: cover;
   background-position: center;
   padding-top: 0px;
@@ -1974,13 +1974,20 @@ div.hero-nature {
 }
 body.hero-nature {
   text-align: center;
-  background: url('..images\background\promo-video-back.png');
+  background: url('promo-video-back.png');
   background-size: cover;
   background-position: center;
   padding-top: 0px;
   padding-bottom: 0px;
 }
-
+.full {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('office-bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height:100%;
+}
 .btn-label {position: relative;left: -12px;display: inline-block;padding: 6px 12px;background: rgba(0,0,0,0.15);border-radius: 3px 0 0 3px;}
 .btn-labeled {padding-top: 0;padding-bottom: 0;}
 .btn { margin-bottom:10px; 
