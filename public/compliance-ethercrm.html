@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- SITE TITTLE -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ether CRM</title>
+
+    <!-- PLUGINS CSS STYLE -->
+    <!-- Bootstrap -->
+    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Themefisher Font -->
+    <link href="plugins/themefisher-font/style.css" rel="stylesheet">
+    <!-- Owl Carousel -->
+    <link href="plugins/owl-carousel/assets/owl.carousel.min.css" rel="stylesheet" media="screen">
+    <!-- Owl Carousel Theme -->
+    <link href="plugins/owl-carousel/assets/owl.theme.green.min.css" rel="stylesheet" media="screen">
+    <!-- Fancy Box -->
+    <link href="plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+
+    <!-- CUSTOM CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+
+    <!--Font Awesome -->
+    <link href="plugins/font-awesome/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- CUSTOM CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- FAVICON -->
+    <link href="images/EtherCRM-small-logo.png" rel="shortcut icon">
+
+</head>
+
+<SCRIPT>
+    function passWord() {
+        var testV = 1;
+        var pass1 = prompt('Please Enter Your Password', ' ');
+        while (testV < 3) {
+            if (!pass1)
+                history.go(-1);
+            if (pass1.toLowerCase() == "lether01") {
+                alert('You Got it Right!');
+                window.open('compliance.html');
+                break;
+            }
+            testV += 1;
+            var pass1 =
+                prompt('Access Denied - Password Incorrect, Please Try Again.', 'Password');
+        }
+        if (pass1.toLowerCase() != "password" & testV == 3)
+            history.go(-1);
+        return " ";
+    }
+</SCRIPT>
+<CENTER>
+    <FORM>
+        <input type="button" value="Enter Protected Area" onClick="passWord()">
+    </FORM>
+</CENTER>
+
+<body class="body-wrapper">
+
+
+    <nav class="navbar main-nav navbar-expand-lg p-0">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/EtherCRM-small-logo.png" alt="ether-logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="tf-ion-android-menu"></span>
+						</button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown dropdown-slide">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <!-- Dropdown list -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Our technology.html">Our technology</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="News.html">News &amp; Updates</a>
+                        </li>
+                        <li class="nav-item dropdown active dropdown-slide">
+                            <a class="nav-link" href="#" data-toggle="dropdown">FAQs
+									<span><i class="tf-ion-ios-arrow-down"></i></span>
+								</a>
+                            <!-- Dropdown list -->
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="FAQ.html">Frequently Asked Questions</a>
+                                <a class="dropdown-item" href="compliance.html">Compliance</a>
+                                <a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <div class="btn-group" class="align-right" style="padding-top: 20px; padding-right: 5px; padding-left: 1px;">
+                            <a class="btn btn-primary" href="login-client.html"><i class="icon-user"></i> Client Login</a>
+                            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="icon-chevron-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="icon-pencil"></i> Client Registration</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group" class="align-right" style="padding-top: 20px;">
+                            <a class="btn btn-primary" href="login-sales.html"><i class="icon-user"></i> Partner Login</a>
+                            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="icon-chevron-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="login-sales-reg.html"><i class="icon-pencil"></i> Partner Registration</a></li>
+                            </ul>
+                        </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--================================
+=            Page Title            =
+=================================-->
+
+    <section class="section page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 m-auto">
+                    <!-- Page Title -->
+                    <h1>Regulatory Complaince</h1>
+                    <!-- Page Description -->
+                    <p>EtherCRM is built with advisers in mind, to help reduce risk.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====  End of Page Title  ====-->
+
+
+    <!--=================================
+=            FAQ Section            =
+==================================-->
+
+    <section class="faq section pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 m-auto">
+                    <div class="block shadow">
+                        <!-- Getting Started -->
+                        <div class="faq-item">
+                            <!-- Title -->
+                            <div class="faq-item-title">
+                                <h2>
+                                    Anti-Money Laundering and Client On-Boarding
+                                </h2>
+                            </div>
+                            <!-- Get Started Accordion -->
+                            <div id="gstAccordion" data-children=".item">
+                                <!-- Accordion Item 01 -->
+                                <div class="item">
+                                    <div class="item-link">
+                                        <a data-toggle="collapse" data-parent="#gstAccordion" href="#gstAccordion1">
+								    Key Considerations
+							    </a>
+                                    </div>
+                                    <div id="gstAccordion1" class="collapse show accordion-block">
+                                        <p>
+                                            National differences are, however, likely to remain in several areas given the different structures of the retail markets in different Member States. To combat this issue Ether CRM will implement a system based not only on the best practices and procedures
+                                            based on MIFID II, but where possible implement and deploy solutions specific to certain member states to reduce the regulatory risk to their clients. New regulatory demands (such as FATCA5, FCPA6, FINRA7 rules,
+                                            BSA8/AML amendments, MiFID9, global PEP10 lists and several others) have emerged and continue to be refined, changed, and made more stringent. AML and KYC compliance budgets have increased significantly over
+                                            the last few years to cope with increased regulatory risk. This report is an analysis of the current regime for authorisded financial service firms in the UK, EU and U.S.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Accordion Item 02 -->
+                                <div class="item">
+                                    <div class="item-link">
+                                        <a data-toggle="collapse" data-parent="#gstAccordion" href="#gstAccordion2">
+										Anti-Money Laundering- EU
+							    </a>
+                                    </div>
+                                    <div id="gstAccordion2" class="collapse accordion-block">
+                                        <p>
+                                            Directive (EU) 2015/8492 of the European Parliament and of the Council of 20 May 2015 on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing, amending Regulation (EU) No 648/2012 of the European
+                                            Parliament and of the Council, and repealing Directive 2005/60/EC of the European Parliament and of the Council and Commission Directive 2006/70/EC (1), and in particular Article 9(2), sets out the operative
+                                            provisions for AML procedures across the EU. The directive must be read in tandem with DIRECTIVE (EU) 2015/849 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 20 May 2015 on the prevention of the use of the
+                                            financial system for the purposes of 1 1 “EIOPA opinion on the use of a common application package for internal models,”EIPOA, https://eiopa.europa.eu/homenews/newsdetails/news/ebaeiop”and-esma-publish-joint-position-on-productoversight-and-governance-processes/index.html,
+                                            31 March 2014. 2 “Directive (EU) 2015/849”http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R1675&from=FR Ether CRM Page 3 money laundering or terrorist financing, amending Regulation (EU) No
+                                            648/2012 of the European Parliament and of the Council, and repealing Directive 2005/60/EC of the European Parliament and of the Council and Commission Directive 2006/70/EC, which sets out EU procedures for
+                                            financial advice firms which currently operate within the EU. 4th Anti-Money Laundering In line with 2012 FATF recommendations, rules on customer due diligence are refined and may vary depending on the risk:
+                                            enhanced vigilance where the risks are greater, simplified measures where risks are lower. The 4th AMLD contains a non-exhaustive list of risk factors and variables to be taken into consideration when performing
+                                            internal risk assessment and when determining simplified, enhanced or normal/standard DD measures. Focus on risk assessment and corresponding Risk Based Approach (RBA) 4th Anti-Money Laundering Directive Ultimate/beneficial
+                                            owners of companies, foundations, holdings or trusts will be listed in national central registers in each EU country registers to be interconnected across the EU. Competent authorities and entities subject to
+                                            the Directive will have access to the register, as well as any person demonstrating "a legitimate interest". Note: “Competent authorities”, “entities subject to the Directive” and “any person demonstrating a
+                                            legitimate interest" are terms that are not defined by the Directive. It will be up to member states to decide who will have access to these registers. Beneficial Owners: Increased transparency through creation
+                                            of national central registers 4th Anti-Money Laundering Directive In case BOs cannot be identified, and there are no grounds for suspicion, the senior managing officials of the legal entity can be considered
+                                            as Bos Increased protection and privacy of BOs in case of potential negative exposure should be warranted (risk of kidnapping, blackmail, intimidation, etc.) BO is still considered as a natural person who owns
+                                            or controls the legal entity and threshold remains unchanged at 25%. It will be up to the member states to decide whether lower percentages should apply. PEPs must remain PEPs for at least 12 months after the
+                                            end of the relevant prominent function (previously up to 12 months). The Directive is proposing to allow a risk-based decision to set adequate time limits (case per case), thus challenging the idea of “once
+                                            a PEP –always presumed a PEP”. The overall thought is that the handling of an “ex-PEP”should be based on an assessment of risk and not on prescribed time limits. PEPs should not be stigmatised as being involved
+                                            in criminal activity. Hence, refusing a business relationship with a PEP on these grounds is contrary to the spirit of the Directive and of the revised FATF Recommendations. PEPs - Politically Exposed Persons
+                                            4th Anti-Money Laundering Directive Tax crimes now within predicate offences Tax crimes relating to direct and indirect taxes are now expressly considered by the Directive as predicate offences. Note: Although
+                                            tax crimes have been predicate offences for some countries in Europe, this has not been the case with many other jurisdictions. The Directive adds tax evasion and other serious fiscal offences to the list of
+                                            predicate offences.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Accordion Item 03 -->
+                                <div class="item">
+                                    <div class="item-link">
+                                        <a data-toggle="collapse" data-parent="#gstAccordion" href="#gstAccordion3">
+
+							      Further AML amp&; KYC consideration EU
+							    </a>
+                                    </div>
+                                    <div id="gstAccordion3" class="collapse accordion-block">
+                                        <p>
+                                            Third party KYC (Consideration of DD Outsourcing) In order to avoid repeated customer identification procedures, leading to delays and inefficiency in business, it is appropriate, subject to suitable safeguards, to allow customers whose identification
+                                            has been carried out elsewhere to be introduced to the obliged entities (note: entities subject to the 4th AMLD). Where an obliged entity relies on a third party, the ultimate responsibility for customer due
+                                            diligence remains with the obliged entity to which the customer is introduced.Note: This point includes responsibility for Ether CRM Page 4 compliance with the Directive, the requirement to report suspicious
+                                            transactions and maintain records 4th AntiMoney Laundering Directive Third country policy With a view to establishing a common approach towards non-EU countries that have deficient AML/TF regimes ("highrisk
+                                            third countries"), the European Commission is now specifically empowered to identify these countries. Beyond a foreseeable "name and shame" effect, the presence of customers originating from a country in this
+                                            list may put significant burden on obliged entities by requiring additional controls. MiFID II will require that clients are also classified as either professional or retail, or eligible counterparties, which
+                                            will determine the services that can be offered to them and the reporting requirements they will be subject to. Professional clients are entities, such as credit institutions, investment firms, collective investment
+                                            schemes, and will be given less protection in comparison to retail clients. Eligible counterparties include those who are opted up based on their experience and expertise, and retail clients covers all others,
+                                            and these are offered significantly more protection. Due to mis-selling concerns, municipalities have been downgraded to retail clients, but they can choose to opt up. Client classification is just as important
+                                            under MiFID as it is EMIR …it’s just a pity that the classification categories are different! AMLD IV MiFID II often appears as the be-all-and-end-all, but it has not been the only regulation we need to watch
+                                            out for on the KYC front. The fourth Anti-Money Laundering Directive (AMLD IV) provides financial institutions with access to a wider range of information, allowing them to conduct enhanced customer due diligence,
+                                            and this must be used to their full ability. AMLD IV is a clamp-down on financial crime in the markets, and the increased remit given to participants to assess and classify their customers must not be taken
+                                            lightly –noncompliance can lead to fines of up to €5 million or 10% of a business’annual turnover. Here, clients will be classified on their risk level (low, medium or high) adding yet another layer to the KYC
+                                            cake. Member States are also required to maintain lists of beneficial ownership of companies and trusts, which is an important thing to keep note o
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Accordion Item 04 -->
+                                <div class="item">
+                                    <div class="item-link">
+                                        <a data-toggle="collapse" data-parent="#gstAccordion" href="#gstAccordion4">
+							      AML and KYC UK
+							    </a>
+                                    </div>
+                                    <div id="gstAccordion4" class="collapse accordion-block">
+                                        <p>
+                                            AML & KYC UK Regime In 1994 (subsequently amended in 2003 and 2007). The Money Laundering Regulations came into force in the UK on 15/12/2007. The Money Laundering (Amendment) Regulations 2012 extended the scope of the Regulations to include all estate
+                                            agents, included a power for supervisory authorities to share information with each other and particular, HMRC’s criteria that may be used to determine whether an individual is “fit and proper” in connection
+                                            with money service businesses and trust and company service providers .The ‘prevention of financial crime is the FCA’s latest guidance on this subject.4 3FACTA guidance-IRS- http://www.irs.gov/PUP/businesses/corporations/TD9610.pdf
+                                            4 FCA ‘Preventing fincial Crime’ https://www.handbook.fca.org.uk/handbook/document/FC1_FCA_20150427.pdf Ether CRM Page 6 The FCA’s risk based approach to AML supervision enables it to focus its resources on
+                                            firms that are particularly exposed to money laundering risk. It uses a variety of tools to do this including the Systematic Anti-Money Laundering Programme (SAMLP) focused on major banks, thematic reviews looking
+                                            at risks across a sector and ‘event driven’ work where AML issues have arisen within individual firms. In 2014 the FCA developed a strategy to enable it to use its financial crime resources more effectively,
+                                            classifying all regulated firms subject to the MLR 2007 in terms of money laundering risk. The 14 major banks covered by the SAMLP continue to be subject to the most intensive AML/CFT supervision, with detailed
+                                            assessments taking around six months to complete, firms in the second highest risk category are subject to a regular inspection programme, consisting of two or three day on-site visits. The FCA reassesses the
+                                            categorisation of firms periodically. UK advice firms are also subject to legislation and frameworks of additional guidance and legislation provided by JMLSG, HMRC and law society.5 FCA annual anti-money laundering
+                                            repor t In July 2013 the FCA published its first ever annual report on anti-money laundering covering the period 2012/13. A second annual report was published in May 2014 covering 2013/14. So far, the FCA has
+                                            not published an annual report for 2014/15 but it is worth keeping an eye out for it. The emerging risks and trends that were noted in the May 2014 annual report were: · many of the money laundering risks that
+                                            firms face are well known, for example corrupt politicians attempting to move their money offshore, or the use of corporate vehicles and shell companies to move the proceeds of crime; · the use of mobile banking
+                                            to pay overseas remittances from the UK was at relatively low levels when compared with the popularity of these services in other parts of the world. As mobile banking products and services are developing rapidly,
+                                            it is important for firms to keep money laundering risks under review; · virtual or digital currencies are not regulated for AML purposes in the UK or elsewhere in the EU. The FATF published a paper on 27 June
+                                            2014 covering the key definitions and potential AML/CFT risks of virtual currencies. The FCA is monitoring the development of virtual currencies and working with other regulators to understand the risks virtual
+                                            currencies may pose, as well as their potential competitive advantages for consumers; and · on derisking the FCA mentioned that it had seen examples where firms could manage the financial crime risk presented
+                                            by higher risk customers effectively without exiting the relationship. It added that any decisions taken by a firm to derisk their business should not unduly impede legitimate access to financial services or
+                                            financial inclusion. Derisking Since the FCA’s last annual report on anti-money laundering there has been further activity on derisking. Earlier this year (27 April 2015) the FCA updated its webpage on money
+                                            laundering to include a statement on derisking and its expectations on banks’ management of money laundering risk. The FCA stated that it was aware that, due to legal and regulatory obligations in the UK and
+                                            abroad, some banks were no longer 5 Joint Money Laundering Steering Group (“JMLSG”): http://www.jmlsg.org.uk/ OFT Money Laundering Regulations 2007 Core Guidance, May 2009 http://www.oft.gov.uk/shared_oft/business_leaflets/general/oft954.pdf
+                                            ICAEW: http://www.icaew.com/en/technical/legal-and-regulatory/money-laundering/uk-law-and-guidance HM Revenue and Customs: http://www.hmrc.gov.uk/MLR/ The Law Society: http://www.lawsociety.org.uk/productsandservices/practicenotes/aml.page
+                                            Ether CRM Page 7 offering financing services to entire categories of customers that they associated with higher money laundering risk, such as money transmitters and FinTech companies, as well as withdrawing
+                                            from providing correspondent banking services. The FCA stated that where a bank does not believe that it can manage the money laundering risk associated with a business relationship effectively, it should not
+                                            enter into, or maintain, that business relationship. However, the regulator added that the risk based approach did not require banks to deal generically with whole categories of customers or potential customers.
+                                            Instead, the FCA would expect banks to recognise that the risks associated with different individual business relationships within a single broad category varies, and to mange that risk appropriately. The FCA
+                                            statement was followed in June by a statement from FATF. FATF felt that derisking was a “complex issue” that goes far beyond AML and CFT. The FATF approach to derisking is based on its 40 Recommendations which
+                                            require financial institutions to identify, assess and understand their money laundering and terrorist financing risks, and implement AML/CFT measures that are commensurate with the risks identified. When establishing
+                                            correspondent banking relationships, FATF stated that banks are required to perform normal customer due diligence on the respondent bank. Additionally, banks are required to gather sufficient information about
+                                            the respondent bank to understand the respondent bank’s business, reputation and the quality of its supervision, including whether it has been subject to a money laundering or terrorist financing investigation
+                                            or regulatory action, and to assess the respondent bank’s AML/CFT controls. Whilst FATF recognised that there will be exceptions in high risk scenarios, its Recommendations do not require banks to perform, as
+                                            a matter of course, normal customer due diligence on the customers of their respondent banks when establishing and maintaining correspondent banking relationships. FATF stated that it would be undertaking work
+                                            to further clarify the interplay between its standards on correspondent banking (Recommendation 13) and other intermediated relationships, and the FATF standards on customer due diligence (Recommendation 10)
+                                            and wire transfers (Recommendation 16). However, there have been no further FATF publications on this topic so far
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Accordion Item 05 -->
+                                <div class="item">
+                                    <div class="item-link">
+                                        <a data-toggle="collapse" data-parent="#gstAccordion" href="#gstAccordion5">
+							      U.S. On-boarding and FACTA
+							    </a>
+                                    </div>
+                                    <div id="gstAccordion5" class="collapse accordion-block">
+                                        <p>
+                                            FATCA/CRS Under the Foreign Account Tax Compliance Act (FATCA), Foreign Financial Institution’s (FFIs) have been put under pressure to register with the Inland Revenue Service (IRS) and submit specific information about their customers, with the aim of
+                                            locating tax avoiding US citizens. Once FFIs have registered, they are provided with a Global Intermediary Identification Number (GIIN) in order to be kept in the IRS database. The FATCA method has since been
+                                            expanded by the Organisation for Economic Cooperation and Development (OECD) to facilitate the exchange of account information across jurisdictions under the Common Reporting Standard (CRS). CRS is a global
+                                            attempt by all participating countries to clamp down on the citizens that are hiding their money abroad. It is a step in the right direction for the free transfer of data on the accountability and transparency
+                                            frontlines, but there is still a long way and a whole lot of confusion to go through before it becomes fully operational. The primary objective of FATCA is to identify U.S. tax evaders who invest in off-shore
+                                            accounts either directly or indirectly through ownership of foreign entities. Two nets that are widely cast involve requirements for Ether CRM Foreign Financial Institutions (FFIs) to report information on foreign
+                                            accounts to the IRS and for passive NonFinancial Foreign Entities (NFFEs) to provide information on substantial U.S. owners to withholding agents. These FATCA requirements place a burden on FFIs and NFFEs to
+                                            collect, validate and maintain sufficient documentary evidence on the identities of clients and owners. Under the FATCA classification scheme, FFIs and NFFEs must also determine whether they have a “reason to
+                                            know”that any client or owner claims are unreliable or incorrect and they must monitor whether there are changes in circumstances that would lead to a reclassification of a client or owner. The Final Regulations
+                                            for FATCA3, effective January 17, 2013, state that a person’s entity classification is the same as the person’s entity classification for U.S. tax purposes. According to the regulations, for example, “an entity
+                                            that is disregarded as a legal entity in its country of organization . . . will be treated as an entity [under FATCA] if it is an entity for U.S. federal income tax purposes.” Further, a withholding agent may
+                                            rely on an entity classification set forth in a valid Form W-8 or W-9 if the withholding agent “has no reason to know that the entity classification is incorrect.” The final FATCA regulations define “AML due
+                                            diligence”rather generically as the “procedures of a financial institution pursuant to the anti-money laundering or similar requirements to which the financial institution, or branch thereof, is subject.” The
+                                            regulations note, however, that AML procedures are key to “identifying the customer (including the owners of the customer), understanding the nature and purpose of the account, and ongoing monitoring. Thus,
+                                            while FATCA does not specifically mandate that AML/KYC onboarding processes be changed to comply with FATCA, it does require that data collected during the onboarding process be reviewed for indicators of U.S.
+                                            status for FATCA classification purposes. This essentially introduces a tax review function to the AML/KYC process. Many FFIs are required to enter an FFI Agreement with the IRS to designate a Responsible Officer
+                                            (RO) who serves as the single point of contact for IRS inquiries and who is responsible for proactively making certain FATCA certifications to the IRS on an ongoing basis. The RO must show that the FFI has adopted
+                                            written policies and procedures related to customer due diligence, withholding and reporting under FATCA. Further, the RO must periodically certify that the FFI has conducted FATCA compliance reviews including
+                                            the disclosure of any material failures.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Accordion Item 06 -->
+                                <div class="item">
+                                    <div class="item-link">
+                                        <a data-toggle="collapse" data-parent="#gstAccordion" href="#gstAccordion6">
+							      AML and KYC Malta
+							    </a>
+                                    </div>
+                                    <div id="gstAccordion6" class="collapse accordion-block">
+                                        <p>
+                                            EtherCRM intends to promote and market its services within Malta to financial advisers and wealth managers. Due to enhanced levels of legislative due diligence and scrutiny, an analysis of additional legislation applicable to Malta must be assessed. The
+                                            Financial Intelligence Analysis Unit (FIAU) is the national central agency in Malta that is responsible for the collection, collation, processing, analysis and dissemination of information with a view to combating
+                                            money laundering and the funding of terrorism. The Unit became operational on the 1st October 2002 when it was established by virtue of Legal Notice 297 of 2002, which brought into force the comprehensive amendments
+                                            to the Prevention of Money Laundering Act that were enacted by means of Act XXXI of 2001. Though set up as an agency within the Ministry responsible for finance, the Unit has separate judicial personality and
+                                            operates autonomously from its own offices with its own staff. ANTI-MONEY LAUNDERING REGULATOR The Malta Financial Services Authority (the “MFSA”) is the single regulator for financial services. This is a fully
+                                            autonomous public authority, which reports to the Maltese Parliament on a regular basis. In certain instances, Ether CRM Page 8 the MFSA acts as an agent of the FIAU, in that it undertakes several on-site Anti-Money
+                                            Laundering checks on its License Holders during its compliance visits. While the authorities mentioned below are not anti-money laundering regulators as such, they fall under the definition of 'supervisory authority'
+                                            under the Prevention of Money Laundering and Funding of Terrorism Regulations (Legal Notice 180 of 2008, as amended by Legal Notices 328 of 2009 and 202 of 2012)6 (the “PMLFTR”). The PMLFTR were enacted under
+                                            the principal piece of legislation the Prevention of Money Laundering Act 1994, as subsequently amended (Chapter 373 of the Laws of Malta) (the “PMLA”)7. The Legal Notice 42 of 2006(The Prevention of Money Laundering
+                                            (Amendment) Regulations, published in Government Gazette Number 17,886 on the 28 February 2006) amended the former Prevention of Money Laundering and Funding of Terrorism Regulations 2003 (Legal Notice 199 of
+                                            2003) and transposed many of the provisions of the EU’s Third Anti-Money Laundering Directive (including the extension of the 2003 Regulations to cover the funding of terrorism). However it was the Prevention
+                                            of Money Laundering and Funding of Terrorism Regulations, 2008 (which came into force on 31 July 2008 and were published in Government Gazette Number 18,289) that transposed all the remaining provisions of the
+                                            EU’s Third Anti-Money Laundering Directive into Maltese law. Due to the number of amendments that were made, the legislator opted to repeal the 2003 Regulations rather than amend them. The original Legal Notice
+                                            180 of 2008 was further amended by Legal Notices 328 of 2009 and 202 of 2012. If and when the proposed EU’s Fourth Anti-Money Laundering Directive comes into force, the PMLFTR would undoubtedly have to be amended
+                                            again to transpose it into Maltese law. The PMLFTR is the legislative instrument which, inter alia, specifically applies to lawyers who are Subject Persons for the purposes of the said regulations. The PMLFTR
+                                            essentially lay down the various obligations that lawyers have insofar as they are Subject Persons under these regulations. It must be understood, however, that the other laws mentioned above apply to all persons
+                                            generally, irrespective of their profession, insofar as they are aimed at combating money laundering and the funding of terrorism (which, ultimately, are criminal offences that every person is obliged not to
+                                            commit). The Malta Institute of Financial Services Service Practitioners (the “IFSP”) has also issued Guidance Notes on the Prevention of Money Laundering and the Funding of Terrorism (published on 6 August
+                                            2010) that would apply to lawyers insofar as these are members of the IFSP. Since these were superseded by Part I of the Implementing Procedures issued by the FIAU, the IFSP Guidance Notes were re-written to
+                                            avoid unnecessary repetition and to ensure stylistic continuity and to eventually form part of the FIAU’s Implementing Procedures Part II. The IFSP’s revised version is complete, and is currently awaiting the
+                                            FIAU’s approval. The scrutiny of transactions undertaken throughout the course of the relationship to ensure that the transactions being undertaken are consistent with the Subject Person’s knowledge of the customer
+                                            and of his business and risk profile, including, where necessary, the source of funds; The requirement for an enhanced Customer Due Diligence for higher risk customers. The PMLFTR defines PEPs as natural persons
+                                            who are or have been entrusted with prominent public functions, including their immediate family members or persons known to be close associates of such persons, but shall not include middle ranking or more
+                                            junior officials. Enhanced Customer Due Diligence measures, on a risk-sensitive basis, are required for persons who, and in situations which, by their nature, can present a higher risk of money laundering or
+                                            the funding of terrorism. 6Prevention of Money Laundering and Funding of Terrorism Regulations (Legal Notice 180 of 2008, as amended by Legal Notices 328 of 2009 and 202 of 2012) ttp://www.justiceservices.gov.mt/DownloadDocument.aspx?app=lom&itemid=8842
+                                            7 Prevention of Money Laundering and Funding of Terrorism Regulations (Chapter 373 of the Laws of Malta) http://justiceservices.gov.mt/DownloadDocument.aspx?app=lom&itemid=8574&l=1.pdf Ether CRM Page 9 Subject
+                                            Persons (including lawyers) are also expected to apply one or more of the stipulated additional measures in order to compensate for the higher risk presented where the applicant for business has not been physically
+                                            present for identification purposes. PEPs are typically included in the category of higher risk clients and therefore enhanced Customer Due Diligence measures must be carried out in their respect. Simplified
+                                            Customer Due Diligence measures do apply to clients who are considered to be low-risk. These lowrisk clients include persons who are authorised to undertake relevant financial business or persons who are licensed
+                                            or otherwise authorised in Malta, in another EU Member State (including EEA States) or under the laws of a ‘reputable jurisdiction’to carry out an activity which is equivalent to ‘relevant financial business’(as
+                                            defined in the PMLFTR), as well as authorised legal persons listed on a regulated market. A ‘reputable jurisdiction’means “any country having appropriate legislative measures for the prevention of money laundering
+                                            and the funding of terrorism, taking into account that country’s membership of, or any declaration or accreditation by, any international organisation recognised as laying down internationally accepted standards
+                                            for the prevention of money laundering and for combating the funding of terrorism, and which supervises natural and legal persons subject to such legislative measures for compliance therewith”. Regulation 12
+                                            of the PMLFTR, lawyers may rely on another Subject Person or on third parties to fulfil the Customer Due Diligence requirements (excluding the ongoing monitoring obligation) provided that the third party is
+                                            a person undertaking activities equivalent to ‘relevant financial business’or certain categories of ‘relevant activity’and is situated in a EU Member State (including EEA States) or in a ‘reputable jurisdiction’
+                                            and is also subject to authorisation or to mandatory professional registration recognised by law. In terms of this regulation, a ‘third party’is defined as a person undertaking activities equivalent to ‘relevant
+                                            financial business’or ‘relevant activity’who is situated in another EU Member State (including EEA States) or in a ‘reputable jurisdiction’and who is subject to authorisation or to mandatory professional registration
+                                            recognised by law. However, it must be noted that the ultimate responsibility for compliance with the required Customer Due Diligence measures lies not with the person being relied upon but with the lawyers
+                                            (as Subject Persons) placing reliance.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Account Accordion -->
+                        <div class="faq-item">
+                            <!-- Title -->
+                            <div class="faq-item-title">
+                                <h2>
+                                    Ether CRM On-Boarding Process
+                                </h2>
+                            </div>
+                            <!-- Account Accordion -->
+                            <div id="accountAccordion" data-children=".item">
+                                <!-- Accordion Item 01 -->
+                                <div class="item">
+                                    <div class="item-link">
+                                        <a data-toggle="collapse" data-parent="#accountAccordion" href="#accountAccordion1">
+										Establish customers identity
+							    </a>
+                                    </div>
+                                    <div id="accountAccordion1" class="collapse accordion-block">
+                                        <p>
+                                            Evidence of identity can be in documentary or electronic form. Individuals: full name, residential address and date of birth ideally from a government issued document which includes the customer's full name and photo, and either residential address or
+                                            date of birth e.g. valid passport, valid photo card driving license etc; or a government issued document (without a photograph) which includes the customer's full name, supported by a second document, either
+                                            government-issued, or issued by a judicial authority, a public sector body or authority, a regulated utility company, or another FCA-regulated firm in the UK financial services sector or in an equivalent jurisdiction
+                                            under the EU, which includes; the customer's full name and either residential address or date of birth. Corporates (other than regulated firms): full name, registration number, registered office in country of
+                                            incorporation, business address. Additionally, for private /unlisted companies: names of all directors (or equivalent), names of individuals who own or control over 25% of its shares or voting rights and names
+                                            of any individual(s) who otherwise exercise control over the management of the company. The firm, should verify the Ether CRM existence of the corporate from either confirming the company's listing on a regulated
+                                            market, conduct a search of the relevant company registry or obtain a copy of the company's Certificate of Incorporation. For private/unlisted companies, the firm may decide, following a risk assessment, to
+                                            verify one or more of the directors as appropriate in line with CDD requirements for individuals. In respect of beneficial owners, the relevant person must take risk based and adequate measures to verify the
+                                            identity of the beneficial owner(s)
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Accordion Item 02 -->
+                                <div class="item">
+                                    <div class="item-link">
+                                        <a data-toggle="collapse" data-parent="#accountAccordion" href="#accountAccordion2">
+									  Digital AML, PEP and Sanction checks
+							    </a>
+                                    </div>
+                                    <div id="accountAccordion2" class="collapse accordion-block">
+                                        <p>
+                                            i) Identification Identification takes place by obtaining the personal details and other relevant information in relation to that person. With respect to a natural person the following information should be obtained: (a) official full name; (b) place
+                                            and date of birth; (c) permanent residential address; (d) identity reference number, where available; and(e) nationality. This procedure should apply in the same manner with respect to both a resident and a
+                                            non-resident applicant for business.”14Evidence of identity can be in documentary or electronic form. Individuals: full name, residential address and date of birth ideally from a government issued document which
+                                            includes the customer's full name and photo, and either residential address or date of birth e.g. valid passport, valid photo card driving license etc; or a government issued document (without a photograph)
+                                            which includes the customer's full name, supported by a second document, either government-issued, or issued by a judicial authority, a public sector body or authority, a regulated utility company or in an equivalent
+                                            jurisdiction under the EU, which includes; the customer's full name and either residential address or date of birth. Corporates (other than regulated firms): full name, registration number, registered office
+                                            in country of incorporation, business address. Additionally, for private /unlisted companies: names of all directors (or equivalent), names of individuals who own or control over 25% of its shares or voting
+                                            rights and names of any individual(s) who otherwise exercise control over the management of the company. The firm, should verify the existence of the corporate from either confirming the company's listing on
+                                            a regulated market, conduct a search of the relevant company registry or obtain a copy of the company's Certificate of Incorporation. For private/unlisted companies, the firm may decide, following a risk assessment,
+                                            to verify one or more of the directors as appropriate in line14RegulaIon 7(4) Of The PMLFTR. with CDD requirements for individuals. In respect of beneficial owners, the relevant person must take risk based and
+                                            adequate measures to verify the identity of the beneficial owner(s).Check of client identity using third party software and EU regime A firm must apply, on a risk-sensitive basis, enhanced customer due diligence
+                                            measures and enhanced ongoing monitoring in any situation which by its nature can present a higher risk of money laundering or terrorist financing. Enhanced due diligence measures must also be applied: a) Where
+                                            the customer has not been physically present for identification purposes; or b) In respect of a correspondent banking relationship with Respondents from non- European Economic Area ('EEA') states; or c) In respect
+                                            of a business relationship or an occasional transaction with a PEP. The timescales on retention 15 will be extended by Ether CRM to all allow firms to keep records of former clients indefinitely16, to ensure
+                                            that financial services firms comply with the differing retention rates set by local regulators PEP Where a firm proposes to establish a business relationship or carry out a one off transaction with a PEP the
+                                            relevant person must: a) Have appropriate risk based procedures to determine whether a customer is a PEP; b) Obtain appropriate senior management approval for establishing the business relaIonship with that
+                                            customer; c) Take adequate measures to establish the source of wealth and source of funds which are involved in the proposed business relaIonship or occasional transacIon; and d) Conduct enhanced ongoing monitoring
+                                            of the relaIonship. Non-EU Clients Correspondents are required to subject Respondents from non- EEA states to enhanced customer due diligence, but should consider doing so whenever the Respondent is considered
+                                            to present a greater money laundering/terrorist financing risk. The enhanced due diligence process should further consider the following elements designed to ensure that the Correspondent has secured a greater
+                                            level of understanding of: a) The Respondent's ownership and management; b) The Respondent's business; c) PEP involvement; and d) The Respondent's AML / terrorist financing controls. Best practice in the UK
+                                            requires that due diligence should be undertaken using a risk-based approach. Ether CRM will force firms who categorised individuals from Non-EU17 counties to perform further due diligence and AML checks before
+                                            processing with new business. Beneficial Owner18AML Regulations define beneficial owners as individuals either owning or controlling more than 25% of body corporates or partnerships (or at least 25% of trusts)
+                                            or otherwise owning or controlling the customer. The JMLSG Guidance stipulates that a relevant person know the names of all individual beneficial owners owning or controlling more than 25% of the company’s shares
+                                            or voting rights (even where these interests are held indirectly) or who otherwise exercise control over the 15 PMLFTR -SecIon 5.2 (C) 16 Where A Client’s Details Have Been Removed From The System By A User,
+                                            The Core Details Of A Client Will Be Deleted In Line With Data Privacy And ProtecIon Laws. An Audit Trail For Due Diligence And Compliance Will Remain On Our System. 17 Non-Eu Refers To Countries That Do Not
+                                            Meet The Same Level Of HarmonizaIon As The European Member Stares. For The Avoidance Of Doubt All Eea And Common Wealth Countries Are Included. 18 PMLFTR-SecIon 3.1.2.1(A)(I) management of the company. The firm
+                                            must take risk based and adequate measures to verify the identity of those individuals Ether CRM will force documentary evidence to be provided for those who are placed on a financial product as being the beneficial
+                                            owner.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Accordion Item 03 -->
+                                <div class="item">
+                                    <div class="item-link">
+                                        <a data-toggle="collapse" data-parent="#accountAccordion" href="#accountAccordion3">
+							      Ether CRM- on-boarding
+							    </a>
+                                    </div>
+                                    <div id="accountAccordion3" class="collapse accordion-block">
+                                        <p>
+                                            A report by the FIAU and MFSA in relaIon to client on-boarding provide clarificaIon on the ‘electronic I.D.’ requirements referred to in the PMLFTR, transposed in accordance with the 4th EU DirecIve on Money Laundering as follows; “SecIon 3.1.1.2 (ii)(a)
+                                            Subject persons are allowed to keep copies of verificaIon documents (cerIfied by an officer of the subject person) either in hard copy or in electronic form. •AlternaIvely subject persons may make use of scanning
+                                            systems meeIng •specified criteria. Scanning systems should: •AutomaIcally record the name of the officer scanning the document •AutomaIcally record the date and Ime when the document was scanned •Ensure that
+                                            these records may not be altered or amended ‘The subject person may scan the I.D. using system so\ware.’ This removes the requirement for I.D. to be cerIfied by the authorised individual under EU law. Despite
+                                            this clear mandate, it may sIll remain good pracIce and relevant for certain EU and third country financial insItuIons. SecIon 3.1.1.2 (ii)(b)(2) _Video Conferencing •A video live transmission through which
+                                            the subject person and the client can make visual and verbal contact in a clear manner; •The idenIficaIon document is made visible during the video call and a series of checks to determine the authenIcity of
+                                            the document should be carried out. IdenIficaIon documents should have opIcal safety •Features •Ensure that the image of the client on the idenIficaIon document matches the visual appearance of the client on
+                                            video •Require the client to transmit an automaIcally generated code (generated through the same or different so\ware) •Electronic VerificaIon of idenIty details (E-IDs / Bank-IDs) •Using systems such as E-IDs
+                                            or Bank-IDs that allow the idenIty to be verified remotely •System has to be recognized as a legally valid means of idenIficaIon verificaIon in the client’s jurisdicIon •System is administered or approved by
+                                            government •Retain evidence that all idenIficaIon details have been verified in this manner and record the system that has been use”19EtherCRM will enable firms to upload both video and voice recordings, enabling
+                                            those firms who wish to take advantage of the new customer due diligence requirements. Further integraIons with Skype and AML checking providers will be implemented in version 2. Of the system. 19 FIAU ‘Amendments
+                                            – Implemenng Procedures: Part 1’ Report By Fiau, Training Event - Xara Lodge12 April 2017 By Alfred Zammit, Alexander Mangion And Jonathan Phyall Ether CRM-Client On-Boarding and CDD Source of Wealth Taken
+                                            from the FIAU report ‘implementing procedures, Issued by the financial intelligence analysis unit In terms of the provisions of the prevention of Money laundering and funding of terrorism Regulations’ referring
+                                            to Regulation 7(2) of the PMLFTR, we insist that advisers adequately record the source of client funds. Advisers and Wealth managers, where suspicious transactions occur, are the first line of defence and must
+                                            prevent the ‘placement’ of such funds. Where the source of funds is not clear, additional information in the form of documentary evidence and additional notes should be input into the system. ‘Additional Comments’
+                                            should also be added to provide as much information as possible where notes are either missing or low in content. The source of wealth module is designed to help advisers and wealth managers take extra steps,
+                                            to ensure compliance with AML regulations on all transactions with new and existing clients. Contact Information In alignment with Regulation 7(4) of the PMLFTR EtherCRM captures the necessary customer information
+                                            required for retail and corporate clients. Contact information is key in establishing KYC principles and good on-boarding practises. Additional steps may be required where the client is ‘high risk’ or a PEP20.
+                                            EtherCRM provides advisers and wealth managers with the ability to record the extra steps taken in the form of ‘additional comments’ and third-party software verification checks. The date and time of each file
+                                            note is recorded along with the user who inputs the note. This provides greater transparency and accountability from a corporate perspecIve. This allows compliance officers and supervision managers to quickly
+                                            idenIty whether compliance steps and procedures have been taken, or not and the individual responsible. This is in accordance with SecIon 3.1.1.2 (ii)(a) of the ‘Amendments – Implemenng Procedures: Part 1’Report
+                                            by FIAU,’21automaIcally recording the user/officer, date of the acIon whilst being placed into an digital audit trail and record which cannot be altered. 20 PMLFTR -SecIon 5.2 (C) 21 ‘Amendments – Implemenng
+                                            Procedures: Part 1’ Report By Fiau, Training Event - Xara Lodge12 April 2017 By Alfred Zammit, Alexander Mangion And Jonathan Phyall Where clients have lived in their residence for a short period of time (less
+                                            than three years) EtherCRM provides advisers and wealth managers with the ability to add in further address records. This also reflects more modern working and living habits of clients who may live separately
+                                            from their partners or have more than one residence. The google address module will also serve to help advisers and wealth managers identify when an address is incorrect, by providing a pictorial view of the
+                                            address which has been input. This means that advisers and back office staff can spot obvious mistakes, detect false or fraudulent information prompting a correction or further information required ‘before’
+                                            new clients conduct business. Client Health and Disposition Under the Health and occupation section advisers and wealth managers will be able to record the current health status and disposition of a client.
+                                            This will enable advisers to record additional information required for clients who are categorised as disabled or vulnerable. This section is designed to enhance the suitability of advice given and record additional
+                                            measures taken. Where a client suffers from ill health and results in the different selection of an insurance, retirement or investment product further comments and documentary evidence can be submitted with
+                                            in this section of EtherCRM. Client Income The client income section of EtherCRM will help advisers and wealth managers determine all ‘sources of a client’s income’22. Where clients have been unable to explain
+                                            the source of their 22RegulaIon 7(4) Of The PMLFTR income or the figures provided are inconsistent, this section of EtherCRM will make clear to advisers and back office staff such inconsistencies. Where inconsistencies
+                                            or large sections of unexplained income are present this gives users the ability to conduct further investigations, alert MLRO/Compliance officer or reject a client before they are on-boarded and any business
+                                            is transacted. Taxation The taxation section of EtherCRM is designed to capture the correct tax residential status of a clientat the point where they wish to transact business. The ‘Investment Registration Scheme
+                                            2014’23 is designed to provide individuals and companies resident in Malta with the opportunity to regularise their position under the Income Tax Act in respect of their holdings of eligible assets which were
+                                            derived from income (including capital gains) that had not been duly declared to the tax authorities. It is important during the client on-boarding process to establish a client’s tax residency ensuring that
+                                            ownership of assets and there subsequent gains are being appropriated correctly. Advisers and Wealth Managers should always answer the additional questions in relation to American clients and American citizenship.24This
+                                            will ensure that advisers and back office staff take further steps to comply with the necessary regulations of FACTA and IRS. This will help prevent the ‘firm’ and the client potentially being subject to legal
+                                            and punitive measures because of non-compliance. 23The Investment Scheme Registraon Act 2014, Malta2424Facta Guidance-Irs- HJp://Www.Irs.Gov/Pup/Businesses/CorporaIons/Td9610.Pdf Bank Account Information (New
+                                            Accounts and Source of Funds) Recording client banking information is not strictly required but may help firms in determining the identity of new clients along with their source of funds. Third party verification
+                                            checks can be used to determine whether the account has been flagged for fraudulent use and to verify the identity of new clients. Conversely payment of funds from a client for a ‘firm’s services’ can be matched
+                                            against banking information provided confirming the transaction as having a legitimate source. Asset OwnershipEtherCRM’s ‘current assets’ section will help advisers and wealth managers establish the beneficial
+                                            owner of assets in alignment with the ‘4th AML Directive’25 and Regulation 7(4) of the PMLFTR. Further guidance is provided by the FIAU26 and the MFSA27. The current assets section is designed to encourage advisers
+                                            and wealth managers, to ensure full disclosure from their clients when it comes to existing investments and assets. Establishing the beneficial owner is both a regulatory and legal 25DirecIve (Eu) 2015/849 Of
+                                            The European Parliament And Of The Council Of 20 May 2015 26 ‘Amendments – ImplemenIng Procedures: Part 1’ Report By Fiau, Training Event - Xara Lodge12 April 2017 By Alfred Zammit, Alexander Mangion And Jonathan
+                                            Phyall 27ArIcle 8 Of The Company Services Act, 2013, Malta objective for financial advice firms. False or intentionally deceptive ownership structures should be exposed and evident, enabling users to follow
+                                            the appropriate reporting mechanisms or prompt further investigation. Users will have the ability to add additional comments and notes alongside the ability to upload supporting documentation in order improve
+                                            KYC principles and implement their own AML procedures. Document UploadThe document upload section on EtherCRM enables users to upload verification documents, corporate related documents and audio files. Each
+                                            document can also be assigned to a specific client contact or client account. The document upload facility is designed for financial advisers and wealth managers to comply with the PMLFTR-SECTION 3.1.2.1(A)(I)
+                                            along with Professional Secrecy Act28, Data Protection Act29, and the Criminal Code.30In alignment with recommendations from the FIAU31and Section 3.1.1.2 (ii)(a) automatically record the date the document was
+                                            uploaded and which user uploaded the document. In alignment with modern business practises, Section 3.1.1.2 (ii)(b)(2) of the FIAU32 report, advisers and wealth managers can also upload video and audio files.
+                                            28 The Professional Secrecy Act 1994, Malta 29 Data ProtecIon Act 2012, Malta 30 ArIcle 9, Sub-SecIon Iii, 293-310 Of The Criminal Code 31 FIAU ‘Amendments – ImplemenIng Procedures: Part 1’ Report By Fiau, Training
+                                            Event - Xara Lodge12 April 2017 By Alfred Zammit, Alexander Mangion And Jonathan Phyall 32 Ibid User Tasks and Advice Process There are no existing detailed provisions addressing product governance or sales
+                                            processes in MiFID, although high level organisational requirements do exist within the ESMA33 guidance, referring to both distributors and product providers. The EtherCRM system has simple modular, colour coded
+                                            timeline system for processing cases, based on the best available practises and guidelines. As we continue to develop the system this will be changed and updated over time to give advisers and wealth managers
+                                            the best user experience. The ability to clearly see the current stages of each case, enables advisers, auditors, the MFSA and other staff to clearly identify what needs to be done and which stages of the advice
+                                            process a case isup to at any given time. EtherCRM also provides users with the flexibility to change a new or existingclient’s category to correctly segment their client base. Segmentation will ensure that
+                                            all clients and given the appropriate contact, in line with the ‘firms’ overall corporate objective and regulation mandated documentation. 33 ‘Final Report, ‘ESMA’s Technical Advice to the Commission on MiFID
+                                            II and MiFIR,’’ published in December 2014, ESMA /2014/1569
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- JAVASCRIPTS -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI14J_PNWVd-m0gnUBkjmhoQyNyd7nllA" async defer></script>
+
+    <script src="plugins/jquery/jquery.js"></script>
+    <script src="plugins/popper/popper.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+    <script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
+    <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
